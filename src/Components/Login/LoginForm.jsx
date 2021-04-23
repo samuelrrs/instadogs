@@ -1,11 +1,42 @@
-import React from 'react'
+import React from "react";
+import { Link } from "react-router-dom";
+import Button from "../Forms/Button/Button";
+import Input from "../Forms/Input/Input";
 
 const LoginForm = () => {
-    return (
-        <div>
-          <button>NÃO ESTA RENDERIZANDO ESSE</button>
-        </div>
-    )
-}
+  const [username, setUsername] = React.useState("");
+  const [password, setPassword] = React.useState("");
 
-export default LoginForm
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    fetch("https://dogsapi.origamid.dev/json/json/jwt-auth/v1/token", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ username, password }),
+    })
+      .then((response) => {
+        console.log(response);
+        return response.json();
+      })
+      .then((json) => {
+        console.log(json);
+      });
+  };
+  return (
+    <secction>
+      Login Form
+      <h1>Login</h1>
+      <form action="" onSubmit={handleSubmit}>
+        <Input label="Usuário" type="text" name="username" />
+        <Input label="Senha" type="password" name="password" />
+        <Button>Entrar</Button>
+      </form>
+      <Link to="/login/criar">Cadastro</Link>
+    </secction>
+  );
+};
+
+export default LoginForm;
