@@ -1,7 +1,8 @@
 import React from 'react';
 import styles from './FeedModal.module.css';
 import useFetch from '../../Hooks/useFetch';
-import Loading from '../Helper/Loading';
+/* import Loading from '../Helper/Loading'; */
+import Loading from '../Helper/Loading'
 import { PHOTO_GET } from '../../Services/Api';
 import PhotoContent from '../Photo/PhotoContent';
 import Error from '../Helper/Error';

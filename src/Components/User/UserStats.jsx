@@ -2,7 +2,8 @@ import React from 'react';
 import Head from '../Helper/Head';
 import useFetch from '../../Hooks/useFetch';
 import { STATS_GET } from '../../Services/Api';
-import Loading from '../Helper/Loading';
+/* import Loading from '../Helper/Loading'; */
+import Loading from '../Helper/Loading'
 import Error from '../Helper/Error';
 const UserStatsGraphs = React.lazy(() => import('./UserStatsGraphs'));
 

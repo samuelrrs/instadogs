@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import useFetch from '../../Hooks/useFetch';
 import { PHOTO_GET } from '../../Services/Api';
 import Error from '../Helper/Error';
+/* import Loading from '../Helper/Loading'; */
 import Loading from '../Helper/Loading';
 import PhotoContent from './PhotoContent';
 import Head from '../Helper/Head';
