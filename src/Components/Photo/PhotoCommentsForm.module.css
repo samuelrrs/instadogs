@@ -27,7 +27,7 @@
   outline: none;
   border-color: #7159c1;
   background: white;
-  box-shadow: 0 0 0 3px #fea;
+  box-shadow: 0 0 0 3px #6755a38e;
 }
 
 .button {
@@ -47,7 +47,7 @@
 
 .button:focus svg path,
 .button:hover svg path {
-  fill: #fea;
+  fill: #6755a38e;
   stroke: #7159c1;
 }
 

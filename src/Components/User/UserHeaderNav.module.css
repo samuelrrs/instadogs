@@ -30,7 +30,7 @@
 
 .nav a.active {
   background: white;
-  box-shadow: 0 0 0 3px #fea;
+  box-shadow: 0 0 0 3px #6755a38e;
   border-color: #7159c1;
 }
 
@@ -68,7 +68,7 @@
 .mobileButtonActive {
   outline: none;
   background: white;
-  box-shadow: 0 0 0 3px #fea;
+  box-shadow: 0 0 0 3px #6755a38e;
   border-color: #7159c1;
   color: #7159c1;
 }
