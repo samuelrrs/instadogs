@@ -20,6 +20,9 @@ const UserStatsGraphs = ({ data }) => {
       );
       setGraph(graphData);
     }
+   /*  else {
+      return <h1>Não há dados ainda</h1>
+    } */
   }, [data]);
 
   return (
