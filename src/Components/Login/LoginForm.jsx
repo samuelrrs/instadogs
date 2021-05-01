@@ -11,7 +11,7 @@ import Head from '../Helper/Head';
 
 const LoginForm = () => {
   const username = useForm();
-  const password = useForm();
+  const password = useForm('number');
 
   const { userLogin, error, loading } = React.useContext(UserContext);
 
