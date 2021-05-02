@@ -10,7 +10,7 @@ import stylesBtn from '../Forms/Button/Button.module.css';
 import Head from '../Helper/Head';
 
 const LoginForm = () => {
-  const username = useForm();
+  const username = useForm('email');
   const password = useForm('number');
 
   const { userLogin, error, loading } = React.useContext(UserContext);
